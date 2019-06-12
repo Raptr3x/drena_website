@@ -11,28 +11,42 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MyNavbar" aria-expanded="false">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>					
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="img/w3newbie.png"/></a>
+
+
+<body data-spy="scroll" data-target="#MyNavbar">
+	<div id="home">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MyNavbar" aria-expanded="false">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>					
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/w3newbie.png"/></a>
+				</div>
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ui class="nav navbar-nav navbar-right">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">O nama</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Usluge</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Kontakt</a>
+						</li>
+					</ui>
+				</div>
 			</div>
-			<div class="collapse navbar-collapse" id="MyNavbar">
-				<ui class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Contact</a></li>
-				</ui>
-			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<oll class="carousel-indicators">
@@ -43,11 +57,6 @@
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
 				<img src="img/carousel.jpg">
-				<div class="carousel-caption">
-					<h1>Get to know bootstrap</h1>
-					<br>
-					<button type="button" class="btn btn-default">Get started</button>			
-				</div>
 			</div> <!-- End Active -->
 			<div class="item">
 				<img src="img/carousel1.jpg">
@@ -69,31 +78,31 @@
 		</div>
 	</div> <!-- End Slider -->
 
-	<div id="about" class="nomargin page-section" id="about">
+	<div id="about" class="nomargin page-section">
         <div class="container clearfix">
             <div class="row clearfix">
                 <div class="col-md-12 col-12 center" style="padding: 0 50px;">
                     <img src="img/barber_pole.png" style="margin-bottom: 20px">
                     <div class="heading-block bottommargin-sm">
-                        <h2>Frizerski salon Drena</h2>
+                        <h1><strong>Frizerski salon Drena</strong></h1>
 					</div>
 					<div class="underline"></div>
-                    <p>Lorem ipsum dolor sit amet, no sea aperiam atomorum. 
+                    <h4>Lorem ipsum dolor sit amet, no sea aperiam atomorum. 
 				Te qui laboramus consectetuer, no pro electram omittantur. 
 				Cu est soluta dissentias, veri veniam nominavi cum te.
 				Lorem ipsum dolor sit amet, no sea aperiam atomorum. 
 				Te qui laboramus consectetuer, no pro electram omittantur. 
-				Cu est soluta dissentias, veri veniam nominavi cum te.</p>
+				Cu est soluta dissentias, veri veniam nominavi cum te.</h4>
                 </div>
             </div>
         </div>
     </div>
 
-	<div id="usluge">
-		<div class="container-fluid padding no-gutters">
+	<div id="services">
+		<div class="container">
 			<div class="row no-padding">
 				<div class="col-md-6">
-					<img class="scissors_design img-responsive" src="img/usluge-img.jpg">
+					<img class="scissors_design img-responsive" src="img/usluge-img-bigger.jpg">
 				</div>
 				<div class="col-md-6">
 					<div class="media">
@@ -144,7 +153,8 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div id="images" class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 
@@ -212,6 +222,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -236,14 +247,14 @@
 		</div>
 	</div>
 
-	<footer class="container-fluid text-center">
+	<footer id="contact" class="container-fluid text-center">
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-md-6">
 				<h3>Contact us</h3>
 				<br>
 				<h4>Herndlgasse 21/9 1100 Vienna,<br> +43 565 5553 2112</h4>
 			</div>
-			<div>
+			<div class="col-md-6">
 				<h3>Connect</h3>
 				<a href="#" class="fa fa-facebook"></a>
 				<a href="#" class="fa fa-instagram"></a>

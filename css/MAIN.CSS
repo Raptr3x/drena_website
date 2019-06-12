@@ -2,11 +2,11 @@ html p{
 	font-family: Montserrat;
 }
 .navbar{
-	margin-bottom: 0;
+	margin-bottom: 3%;
 	border-radius: 0;
 	background-color: #dc93c1;
 	color: #FFF;
-	padding: 1% 0;
+	padding-top: .8rem; 
 	font-size: 1.2em;
 	border: 0;
 }
@@ -32,21 +32,14 @@ html p{
 .item img{
   width: 100%;
 }
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-  background: #dc93c1;
-  border: 2px solid #FFF;
-}
 .container{
-  margin: 2% auto;
+  margin: 1% auto;
   center-item: true;
 }
 #about{
 	padding: 50px 0;
 	text-align: center;
-	background: #e9ecef;
+	background: #e6b3d3;
 }
 .underline{
 	border: solid #dc93c1 2.5px;
@@ -56,7 +49,7 @@ html p{
 .col-md-6 img{
 	max-width: 100%;
 	max-height: 100%;
-	margin-bottom: 1%;
+	margin-bottom: 3%;
 }
 .row {
 	display: flex;
@@ -67,6 +60,13 @@ html p{
 #icon{
   max-width: 200px;
   margin: 1% auto;
+}
+#images{
+	background: #e6b3d3
+}
+#images .container{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 footer{
 	width: 100%;
@@ -95,13 +95,19 @@ footer{
 }
 
 @media (max-width: 600px){
-  .carousel-caption{
-    display: none;
-  }
-  #icon{
-    max-width: 150px;
-  }
-  h2{
-    font-size: 1.9em;
-  }
+	.carousel-caption{
+		display: none;
+	}
+	#icon{
+		max-width: 150px;
+	}
+	h2{
+		font-size: 1.9em;
+	}
+	#images{
+		background: #e6b3d3;
+	}
+	#images .container{
+		margin: -2rem;
+	}
 }
