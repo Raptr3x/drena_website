@@ -5,24 +5,26 @@ html p{
 	margin-bottom: 3%;
 	border-radius: 0;
 	background-color: #dc93c1;
-	color: #FFF;
-	padding-top: .8rem; 
 	font-size: 1.2em;
 	border: 0;
 }
 .navbar-brand{
 	float: left;
-	min-height: 55px;
-	padding: 0 15px 5px;
+	min-height: 50px;
+	margin-top: -5px;	 
+	padding: 0 15px;
+}
+#logo{
+	max-height: 120%;
 }
 .navbar-inverse .navbar-nav .active a,
 .navbar-inverse .navbar-nav .active a:focus, 
 .navbar-inverse .navbar-nav .active a:hover{
-	color: #FFF;
+	color: #9210b3;
 	background-color: #dc93c1;
 }
 .navbar-inverse .navbar-nav li a{
-	color: #D5D5D5;
+	color: #fddaf0;
 }
 .carousel-caption{
   top:50%;
@@ -32,17 +34,18 @@ html p{
 .item img{
   width: 100%;
 }
-.container{
+.container-fluid{
   margin: 1% auto;
   center-item: true;
 }
 #about{
 	padding: 50px 0;
 	text-align: center;
+	color: #9210b3;
 	background: #e6b3d3;
 }
 .underline{
-	border: solid #dc93c1 2.5px;
+	border: solid #cd0fff 2.5px;
 	border-radius: 2px;
 	margin: 20px 45% 20px 45%;
 }
@@ -57,6 +60,9 @@ html p{
 .row .col-md-6 {
 	align-self: center
 }
+#services p, h4{
+	color: #9210b3;
+}
 #icon{
   max-width: 200px;
   margin: 1% auto;
@@ -64,7 +70,7 @@ html p{
 #images{
 	background: #e6b3d3
 }
-#images .container{
+#images .container-fluid{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
 }
