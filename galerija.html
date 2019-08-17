@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+
+    <script>
+        var folder = "img/hairstyles/";
+        $.ajax({
+            url: folder,
+            success: function (data) {
+                $(data).find("a").attr("href", function (i, val) {
+                    if (val.match(/\.(jpe?g|png|gif)$/)) {
+                        $(".gal").append("<img src='" + folder + val + "' id='image' />");
+                    }
+                });
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="galerija">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-galerija">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MyNavbar" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="MyNavbar">
+                    <ui class="nav navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ui>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" id="body-galerija">
+        <div class="col-md-12">
+            <div class="row">
+                <hr>
+                <div class="gal">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

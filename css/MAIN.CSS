@@ -10,9 +10,8 @@ html p{
 }
 .navbar-brand{
 	float: left;
-	min-height: 50px;
-	margin-top: -5px;	 
-	padding: 0 15px;
+	margin-top: -5px;
+    padding: 0 15px;
 }
 #logo{
 	max-height: 120%;
@@ -64,8 +63,8 @@ html p{
 	color: #9210b3;
 }
 #icon{
-  max-width: 200px;
-  margin: 1% auto;
+    max-width: 200px;
+    margin: 1% auto;
 }
 #images{
 	background: #e6b3d3
@@ -73,6 +72,11 @@ html p{
 #images .container-fluid{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+}
+#galery_button {
+    margin-top: 2%;
+    padding: 15px 40px;
+    color: #9210b3;
 }
 footer{
 	width: 100%;
@@ -116,4 +120,39 @@ footer{
 	#images .container{
 		margin: -2rem;
 	}
+}
+
+
+
+/*galerija*/
+
+.imgStyle {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+#imgStyle:hover { opacity: 0.7;}
+
+.gal {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.gal img {
+    width: 100%;
+    padding: 7px 0;
+}
+
+@media (max-width: 500px) {
+
+    .gal {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
 }
